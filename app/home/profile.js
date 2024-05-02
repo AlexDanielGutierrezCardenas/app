@@ -15,7 +15,7 @@ import {
 import { FlashList } from "@shopify/flash-list";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 // import Maps from "../assets/components/screens/Maps";
-import MpVideos from "../assets/components/screens/mpVideos";
+import MpVideos from "../../assets/components/database/videos/video1.mp4";
 // import {Platform as webPlatform} from "react-native-web";
 
 const { width, height } = Dimensions.get("window");
@@ -38,27 +38,27 @@ const DATA = [
 const datas = [
   {
     id: "1",
-    image: require("../assets/components/database/images/quieneSomos/img1.jpg"),
+    image: require("../../assets/components/database/images/quieneSomos/img1.jpg"),
   },
   {
     id: "2",
-    image: require("../assets/components/database/images/quieneSomos/img2.jpg"),
+    image: require("../../assets/components/database/images/quieneSomos/img2.jpg"),
   },
   {
     id: "3",
-    image: require("../assets/components/database/images/quieneSomos/img3.jpg"),
+    image: require("../../assets/components/database/images/quieneSomos/img3.jpg"),
   },
   {
     id: "4",
-    image: require("../assets/components/database/images/quieneSomos/img4.jpg"),
+    image: require("../../assets/components/database/images/quieneSomos/img4.jpg"),
   },
   {
     id: "5",
-    image: require("../assets/components/database/images/quieneSomos/img5.jpg"),
+    image: require("../../assets/components/database/images/quieneSomos/img5.jpg"),
   },
   {
     id: "6",
-    image: require("../assets/components/database/images/quieneSomos/img6.png"),
+    image: require("../../assets/components/database/images/quieneSomos/img6.png"),
   },
 ];
 
@@ -77,23 +77,20 @@ const renderItem = ({ item, index }) => (
         height: width / 2,
         width: width * 0.7,
       }}
-      source={item.image}
+      source={index.image}
     />
   </View>
 );
 
 export default MyList = () => {
-  const loginWithFacebook = () => {
-    console.log("Button pressed");
-  };
 
   return (
     <>
       <ScrollView>
         <FlashList
           estimatedItemSize={200}
-          style={{ backgroundColor: "red" }}
-          keyExtractor={(item, index) => String(index)}
+          // style={{ backgroundColor: "red" }}
+          keyExtractor={(item, index) => String(index.id)}
           showsHorizontalScrollIndicator={true}
           data={datas}
           horizontal
@@ -135,7 +132,7 @@ export default MyList = () => {
                 height: width / 2,
                 width: width * 0.7,
               }}
-              source={require("../assets/components/database/images/quieneSomos/img6.png")}
+              source={require("../../assets/components/database/images/quieneSomos/img6.png")}
             />
           </View>
           <View
@@ -157,7 +154,7 @@ export default MyList = () => {
               </View>
               <View style={{ flexDirection: "row", marginTop: 20 }}>
                 <Image
-                  source={require("../assets/components/database/images/quieneSomos/img6.png")}
+                  source={require("../../assets/components/database/images/quieneSomos/img6.png")}
                   style={{
                     width: width / 4,
                     height: width / 4,
@@ -166,7 +163,7 @@ export default MyList = () => {
                   }}
                 />
                 <Image
-                  source={require("../assets/components/database/images/quieneSomos/img6.png")}
+                  source={require("../../assets/components/database/images/quieneSomos/img6.png")}
                   style={{
                     width: width / 4,
                     height: width / 4,
@@ -184,7 +181,7 @@ export default MyList = () => {
               backgroundColor="#3b5998"
               width="8px"
               height="8px"
-              onPress={loginWithFacebook}
+              // onPress={loginWithFacebook}
             ></FontAwesome.Button>
             <Text>Contactos:</Text>
             <Text>Horarios de atención 24 horas y 365 dias del año</Text>

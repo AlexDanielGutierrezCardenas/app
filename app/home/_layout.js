@@ -1,8 +1,8 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Drawer } from 'expo-router/drawer';
 import { Image } from 'react-native';
-import img from '../assets/components/database/images/contactos/llamada.png'
-import CustomDrawerContent from '../assets/components/customDrawerContent';
+import img from '../../assets/components/database/images/contactos/llamada.png'
+import CustomDrawerContent from '../../assets/components/customDrawerContent';
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign ,FontAwesome } from '@expo/vector-icons';
 export default function Layout() {
@@ -10,7 +10,7 @@ export default function Layout() {
     <GestureHandlerRootView style={{ flex: 1}}>
       
       <Drawer drawerContent={CustomDrawerContent}>
-      <Image style={{width:50,height:50}} source={require("../assets/components/database/images/quieneSomos/img4.jpg")}/>
+      <Image style={{width:50,height:50}} source={require("../../assets/components/database/images/quieneSomos/img4.jpg")}/>
         <Drawer.Screen
           name="index" // This is the name of the page and must match the url from root
           options={{
@@ -41,7 +41,16 @@ export default function Layout() {
             )
           }}
         />
-      
+        <Drawer.Screen
+          name="information" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'informacion',
+            title: 'INFORMACION DE ESTABLECIMIENTOS DE SALUD',
+            drawerIcon:({size, color})=>(
+              <AntDesign name="contacts" size={size} color={color} />
+            )
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

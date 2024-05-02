@@ -19,12 +19,12 @@ export const Items = [
       "Up to 20 hours battery life | Super powerful Bass | 40mm dynamic driver | Pressure less ear muffs | Bluetooth 5.0 | Voice control",
     isOff: true,
     offPercentage: 10,
-    productImage: require("../assets/components/database/images/medics/img1.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img1.jpg"),
     isAvailable: true,
     productImageList: [
-      require("../assets/components/database/images/products/boat1.png"),
-      require("../assets/components/database/images/products/boat2.png"),
-      require("../assets/components/database/images/products/boat3.png"),
+      require("../../assets/components/database/images/products/boat1.png"),
+      require("../../assets/components/database/images/products/boat2.png"),
+      require("../../assets/components/database/images/products/boat3.png"),
     ],
   },
   {
@@ -35,12 +35,12 @@ export const Items = [
     description:
       "boAt Rockerz 450 M is an on-ear wireless headset that has been ergonomically designed to meet the needs of music lovers.",
     isOff: false,
-    productImage: require("../assets/components/database/images/medics/img2.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img2.jpg"),
     isAvailable: true,
     productImageList: [
-      require("../assets/components/database/images/medics/img4.jpg"),
-      require("../assets/components/database/images/products/boat2.png"),
-      require("../assets/components/database/images/products/boat3.png"),
+      require("../../assets/components/database/images/medics/img4.jpg"),
+      require("../../assets/components/database/images/products/boat2.png"),
+      require("../../assets/components/database/images/products/boat3.png"),
     ],
   },
   {
@@ -52,12 +52,12 @@ export const Items = [
       "Bluetooth: It has Bluetooth v5.0 with a range of 10m and is compatible with Android & iOS",
     isOff: true,
     offPercentage: 18,
-    productImage: require("../assets/components/database/images/medics/img3.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img3.jpg"),
     isAvailable: true,
     productImageList: [
-      require("../assets/components/database/images/accessories/boatairpods1.png"),
-      require("../assets/components/database/images/accessories/boatairpods2.png"),
-      require("../assets/components/database/images/accessories/boatairpods3.png"),
+      require("../../assets/components/database/images/accessories/boatairpods1.png"),
+      require("../../assets/components/database/images/accessories/boatairpods2.png"),
+      require("../../assets/components/database/images/accessories/boatairpods3.png"),
     ],
   },
   {
@@ -68,13 +68,13 @@ export const Items = [
     description:
       "Fly into your workouts with precise tones that inspire and energize your system with its HD sound, all the time.",
     isOff: false,
-    productImage: require("../assets/components/database/images/medics/img4.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img4.jpg"),
     isAvailable: true,
     productImageList: [
-      require("../assets/components/database/images/accessories/boatbassheads1.png"),
-      require("../assets/components/database/images/accessories/boatbassheads2.png"),
-      require("../assets/components/database/images/accessories/boatbassheads3.png"),
-    ],
+      require("../../assets/components/database/images/accessories/boatbassheads1.png"),
+      require("../../assets/components/database/images/accessories/boatbassheads2.png"),
+      require("../../assets/components/database/images/accessories/boatbassheads3.png"),
+    ]
   },
   {
     id: 5,
@@ -84,12 +84,12 @@ export const Items = [
     description:
       "The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers.",
     isOff: false,
-    productImage: require("../assets/components/database/images/medics/img5.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img5.jpg"),
     isAvailable: false,
     productImageList: [
-      require("../assets/components/database/images/accessories/boatrockerz1.png"),
-      require("../assets/components/database/images/accessories/boatrockerz2.png"),
-      require("../assets/components/database/images/accessories/boatrockerz3.png"),
+      require("../../assets/components/database/images/accessories/boatrockerz1.png"),
+      require("../../assets/components/database/images/accessories/boatrockerz2.png"),
+      require("../../assets/components/database/images/accessories/boatrockerz3.png"),
     ],
   },
   {
@@ -100,22 +100,22 @@ export const Items = [
     description:
       "One Touch Control & Voice Assistant: With one multifunction button, you can play/pause, previous/next track and answer/hang-up calls.Voice assistant function lets you access siri/Google Assistant",
     isOff: false,
-    productImage: require("../assets/components/database/images/medics/img6.jpg"),
+    productImage: require("../../assets/components/database/images/medics/img6.jpg"),
     isAvailable: true,
     productImageList: [
-      require("../assets/components/database/images/accessories/boultairbass1.png"),
-      require("../assets/components/database/images/accessories/boultairbass2.png"),
-      require("../assets/components/database/images/accessories/boultairbass3.png"),
+      require("../../assets/components/database/images/accessories/boultairbass1.png"),
+      require("../../assets/components/database/images/accessories/boultairbass2.png"),
+      require("../../assets/components/database/images/accessories/boultairbass3.png"),
     ],
   },
 ];
 export const dataImages = [
-  require("../assets/components/database/images/quieneSomos/img1.jpg"),
-  require("../assets/components/database/images/quieneSomos/img2.jpg"),
-  require("../assets/components/database/images/quieneSomos/img3.jpg"),
-  require("../assets/components/database/images/quieneSomos/img4.jpg"),
-  require("../assets/components/database/images/quieneSomos/img5.jpg"),
-  require("../assets/components/database/images/quieneSomos/img6.png"),
+  require("../../assets/components/database/images/quieneSomos/img1.jpg"),
+  require("../../assets/components/database/images/quieneSomos/img3.jpg"),
+  require("../../assets/components/database/images/quieneSomos/img2.jpg"),
+  require("../../assets/components/database/images/quieneSomos/img4.jpg"),
+  require("../../assets/components/database/images/quieneSomos/img5.jpg"),
+  require("../../assets/components/database/images/quieneSomos/img6.png"),
 ];
 export const markers = [
   {
@@ -156,7 +156,8 @@ export const markers = [
 ];
 
 export const dataEmergencia = [
-  { id: 1, name: "Bomberos", telefono: 119, color:"yellow" },
-  { id: 2, name: "Linea Patrulla", telefono: 112, color:"green" },
-  { id: 3, name: "Ambulancia", telefono: 110, color:"blue" },
+  { id: 1, name: "Bomberos", telefono: 119 },
+  { id: 2, name: "Linea Patrulla", telefono: 112 },
+  { id: 3, name: "Ambulancia", telefono: 110},
+
 ];
